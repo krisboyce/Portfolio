@@ -1,0 +1,166 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #a80;
+    background-color: #448;
+    text-shadow: -1px -1px 1px #113;
+    text-align:center;
+}
+
+header, footer, nav, section {
+    display: block;
+    background: linear-gradient(180deg, #A80 0%, #448 100%);
+    border: 1px solid #fb0;
+        border-radius:3px;
+        margin-bottom:15px;
+}
+
+.contact{
+
+}
+
+.comment{
+    width:100%;
+}
+
+footer{
+    margin-top:15px;
+    text-align:left;
+}
+div{
+    border:1px inset solid #a80
+    text-align:center;
+    display:inline-block;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.work{
+    border-radius:5px;
+    height:450px;
+    width:450px;
+}
+
+.Landing{
+    max-height:300px;
+    overflow:hidden;
+}
+
+article > p{
+    color:antiquewhite;
+}
+
+section{
+    margin-bottom:0px;
+}
+
+div > p, div > h2{
+    margin:5px;
+
+
+}
+a{
+    color:#88a;
+    font-style:normal;
+    transition:all 0.75s;
+    text-decoration:none;
+    font-weight:100;
+}
+
+a:hover{
+    color:#ddd;
+    font-style:italic;
+
+}
+header > nav > a{
+    border:none;
+    margin:10%;
+}
+
+header > nav{
+    margin-bottom:-1px;
+}
+
+footer > nav {
+    border:none;
+    background:none;
+    display:inline;
+    margin-right:5px;
+    float:right;
+}
+
+footer > p{
+    display:inline;
+}
+
+.Home{
+    width: 28%;
+    border: 1px solid #8b8;
+   display:inline-block;
+   text-align:center;
+   margin-right:2%;
+   margin-left:2%;
+   right:-15px;
+   box-shadow:2px 2px 3px 1px #444 inset;
+
+}
+
+#Left{
+    margin-left:3.5%;
+}
+
+img{
+    width:100%
+
+}
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}

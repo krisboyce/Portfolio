@@ -1,0 +1,47 @@
+﻿@model Portfolio.Models.ContactForm
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Contact Me</h1>
+<form action="@Url.Action("Index", "Contact")" method="post">
+
+    <div class="contact">
+        @Html.LabelFor(x => x.ContactFirstName)
+        @Html.TextBoxFor(x => x.ContactFirstName)
+        @Html.ValidationMessageFor(x => x.ContactFirstName)
+    </div>
+
+    <div class="contact">
+        @Html.LabelFor(x => x.ContactLastName)
+        @Html.TextBoxFor(x => x.ContactLastName)
+        @Html.ValidationMessageFor(x => x.ContactLastName)
+    </div>
+    <br />
+    <div class="contact">
+        @Html.LabelFor(x => x.ContactEmail)
+        @Html.TextBoxFor(x => x.ContactEmail)
+        @Html.ValidationMessageFor(x => x.ContactEmail)
+    </div>
+
+    <div class="contact">
+        @Html.LabelFor(x => x.ContactPhone)
+        @Html.TextBoxFor(x => x.ContactPhone)
+        @Html.ValidationMessageFor(x => x.ContactPhone)
+    </div>
+    <br />
+    <div class="contact">
+        @Html.LabelFor(x => x.ContactComment)
+        @Html.TextAreaFor(x => x.ContactComment)
+        @Html.ValidationMessageFor(x => x.ContactComment)
+    </div>
+    <br />
+    <input type="submit" value="Submit" />
+</form>
+@*Add a reference to jQuery validation*@
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

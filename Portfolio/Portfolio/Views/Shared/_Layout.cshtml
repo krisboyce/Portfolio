@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <h1>
+            Kristopher Boyce
+        </h1>
+        <nav class="Head">
+            <a href="@Url.Action("Index", "Home")">
+                Home
+            </a>
+            &nbsp|&nbsp
+            <a href="@Url.Action("Index", "About")">
+                About
+            </a>
+            &nbsp|&nbsp
+            <a href="@Url.Action("Index", "Work")">
+                Work
+            </a>
+            &nbsp|&nbsp
+            <a href="@Url.Action("Index", "Contact")">
+                Contact
+            </a>
+        </nav>
+    </header>
+    <section class="Container">
+       @RenderBody()
+    </section>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <footer>
+        <h1>
+            Footer
+        </h1>
+        <p>
+            Copyright 2014 Your Name
+        </p>
+        <nav class="Foot">
+            <a href="@Url.Action("Index", "Home")">
+                Home
+            </a>
+            &nbsp|&nbsp
+            <a href="@Url.Action("Index", "About")">
+                About
+            </a>
+            &nbsp|&nbsp
+            <a href="@Url.Action("Index", "Work")">
+                Work
+            </a>
+            &nbsp|&nbsp
+            <a href="@Url.Action("Index", "Contact")">
+                Contact
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
